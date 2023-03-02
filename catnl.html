@@ -1,4 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <title>Hi</title>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CAT NL.txt - Cybersecurity Associations Tournament</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#" class="logo">CAT NL.txt</a>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#rules">Rules</a></li>
+				<li><a href="#register">Register</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="hero">
+			<!--<h1>CAT NL.txt</h1>
+			<p>Cybersecurity Associations Tournament</p>-->
+		</div>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About the Competition</h2>
+			<p>The CAT NL.txt competition is a Cybersecurity Associations Tournament in the Attack defense format</p>
+		</section>
+		<section id="rules">
+			<h2>Competition Rules</h2>
+			<ol>
+				<li>Lorem ipsum dolor sit amet</li>
+				<li>Consectetur adipiscing elit</li>
+				<li>Suspendisse fringilla nisi sit amet ipsum tincidunt, vel eleifend nisl sodales</li>
+				<li>Fusce eget lectus vel nulla sagittis commodo eget eu nibh</li>
+				<li>Pellentesque euismod dolor ac massa viverra, quis venenatis tortor commodo</li>
+			</ol>
+		</section>
+		<section id="register">
+			<h2>Register for the Competition using this link.</h2> <a href="https://forms.gle/8Z9Z9Z9Z9Z9Z9Z9Z9">Register</a>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<p>For more information or to become a sponsor, please contact us at:</p>
+			<a href="mailto:info@cyberstudents.nl"><i class="fas fa-envelope"></i> info@cyberstudents.nl</a>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 CAT NL.txt - Cybersecurity Associations Tournament</p>
+	</footer>
+</body>
+<script>
+	// # Whenever a button is clicked, scroll to the corresponding section and hide the hero
+	const navLinks = document.querySelectorAll('nav a');
+	navLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			const section = document.querySelector(link.getAttribute('href'));
+			section.scrollIntoView({behavior: 'smooth'});
+			document.querySelector('.hero').style.display = 'none';
+		});
+	});
+
+</script>
 </html>
