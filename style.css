@@ -147,3 +147,13 @@ footer {
 	background-size: cover;
 	background-position: center;
 }
+
+/* H3 should be in orange */
+h3 {
+	color: orange;
+}
+
+/* Links should be in red */
+a {
+	color: red;
+}
